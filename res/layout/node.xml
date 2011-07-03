@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+   android:background="@drawable/simabg2"
+	android:layout_height="match_parent">
+
+	<LinearLayout 
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/picture_frame"
+		android:paddingBottom="5dp"
+		>
+		<include android:id="@+id/entry" layout="@layout/node_entry"
+			android:layout_width="match_parent" android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:scrollbarStyle="insideOverlay" android:id="@+id/scroll"
+		>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			>
+
+			<ImageView android:src="@android:drawable/divider_horizontal_dark"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:scaleType="fitXY" android:paddingLeft="5dp"
+				android:paddingRight="5dp" android:paddingBottom="2dp"
+				android:paddingTop="2dp" />
+
+			<TextView 
+				android:id="@+id/process_header"
+				android:text="Processes" android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:textStyle="bold"
+				android:textSize="18dip" 
+				android:background="@android:drawable/divider_horizontal_bright"
+				android:padding="10dp"
+				/>
+
+			<ImageView android:src="@android:drawable/divider_horizontal_dark"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:scaleType="fitXY" android:paddingLeft="5dp"
+				android:paddingRight="5dp" android:paddingBottom="2dp"
+				android:paddingTop="2dp" />
+
+			<ListView android:id="@+id/process_entry"
+				android:layout_width="match_parent" android:layout_height="wrap_content" 
+				/>
+
+			<ImageView android:src="@android:drawable/divider_horizontal_dark"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:scaleType="fitXY" android:paddingLeft="5dp"
+				android:paddingRight="5dp" android:paddingBottom="2dp"
+				android:paddingTop="2dp" />
+
+			<TextView android:text="Disks" android:layout_width="match_parent"
+				android:id="@+id/disk_header"
+				android:layout_height="wrap_content" android:textStyle="bold"
+				android:background="@android:drawable/divider_horizontal_bright"
+				android:padding="10dp"
+				android:textSize="18dip" />
+
+			<ImageView android:src="@android:drawable/divider_horizontal_dark"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:scaleType="fitXY" android:paddingLeft="5dp"
+				android:paddingRight="5dp" android:paddingBottom="2dp"
+				android:paddingTop="2dp" />
+			<LinearLayout
+			    xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:orientation="horizontal"
+			    android:layout_height="wrap_content" android:layout_width="match_parent">
+			    <TextView
+			        android:id="@+id/free"
+			        android:layout_width="wrap_content"
+			        android:layout_weight="1"
+			        android:layout_height="wrap_content"
+			        android:gravity="center|center_vertical"
+			        android:text="Free"
+			    />
+			    <TextView
+			        android:id="@+id/used"
+			        android:layout_width="wrap_content"
+			        android:layout_weight="1"
+			        android:layout_height="wrap_content"
+			        android:gravity="center|center_vertical"
+			        android:text="Used"
+			    />
+			    <TextView
+			        android:id="@+id/size"
+			        android:layout_width="wrap_content"
+			        android:layout_weight="1"
+			        android:layout_height="wrap_content"
+			        android:gravity="center|center_vertical"
+			        android:text="Size"
+			    />
+			</LinearLayout>
+			
+			<ImageView android:src="@android:drawable/divider_horizontal_dark"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:scaleType="fitXY" android:paddingLeft="5dp"
+				android:paddingRight="5dp" android:paddingBottom="2dp"
+				android:paddingTop="2dp" />
+	
+			<ListView android:id="@+id/disk_entry" android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

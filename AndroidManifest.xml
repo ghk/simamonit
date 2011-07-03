@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest android:versionCode="1" android:versionName="1.0"
+    package="id.co.microvac.simamonit" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <supports-screens android:anyDensity="true"
+        android:largeScreens="true" android:normalScreens="true"
+        android:resizeable="true" android:smallScreens="true"/>
+    <application android:icon="@drawable/sima"
+        android:label="@string/app_name" android:name="SimaMonit" android:theme="@android:style/Theme.Light">
+        <activity android:label="@string/app_name" android:name=".NodeListActivity" android:configChanges="orientation|keyboard|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".NodeActivity" android:configChanges="orientation|keyboard|keyboardHidden"/>
+        <activity android:name=".ProcessActivity" android:configChanges="orientation|keyboard|keyboardHidden"/>
+        <activity android:name=".HostedCommandActivity" android:configChanges="orientation|keyboard|keyboardHidden"/>
+    </application>
+</manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:background="@drawable/simabg2"
+	android:layout_height="match_parent">
+
+	<LinearLayout 
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/picture_frame"
+		android:paddingBottom="5dp"
+		>
+		<include android:id="@+id/entry" layout="@layout/node_entry"
+			android:layout_width="match_parent" android:layout_height="wrap_content" />
+	</LinearLayout>
+	
+	<TextView 
+		android:id="@+id/process_name"
+		android:text="Processes" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:textStyle="bold"
+		android:textSize="18dip" 
+		android:background="@android:drawable/divider_horizontal_bright"
+		android:padding="10dp"
+		/>
+
+	<ListView android:id="@+id/process_info_entry"
+		android:layout_width="match_parent" android:layout_height="fill_parent" />
+		
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:padding="6dip">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1" android:layout_height="wrap_content">
+	    <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_height="wrap_content" android:layout_width="match_parent">
+	        <TextView
+	            android:id="@+id/name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="left|center_vertical"
+	            android:text="Process Name"
+	            android:textSize="14dip"
+	            android:paddingBottom="6dip"
+	        />
+	        <TextView
+	            android:id="@+id/status"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="right|center_vertical"
+	            android:text="Status"
+	            android:textSize="14dip"
+	            android:paddingBottom="6dip"
+	        />
+        </LinearLayout>
+	    <LinearLayout
+            android:id="@+id/content"
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+		    <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_height="wrap_content" android:layout_width="match_parent">
+		        <TextView
+		            android:id="@+id/memory"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="left|center_vertical"
+		            android:paddingBottom="6dip"
+		            android:text="Memory"/>
+		        <TextView
+		            android:id="@+id/uptime"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="right|center_vertical"
+		            android:paddingBottom="6dip"
+		            android:text="Thu, 25 Jun 2011, 20:34 GMT"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
